@@ -28,10 +28,11 @@ const AddCoffee = () => {
         if(data.insertedId){
             Swal.fire({
                 title: 'success!',
-                text: 'Do you want to continue',
+                text: 'Add coffee successfully',
                 icon: 'success',
                 confirmButtonText: 'Cool'
               })
+              form.reset();
         }
        })
     }
